@@ -1,3 +1,6 @@
+"main.cpp" calls assembly functions from "asm.asm" file
+in order to do some bitwise operations.
+
 --------------------------------------------
 Sistema Operacional: Ubuntu 14.04 LTS
 Sintax: Intel
