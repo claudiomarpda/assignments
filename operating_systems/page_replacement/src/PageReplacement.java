@@ -116,7 +116,7 @@ public class PageReplacement {
             System.out.println();
              */
         }
-        System.out.println("OTM " + missingPages);
+        System.out.println("OPT " + missingPages);
     }
 
     /**
