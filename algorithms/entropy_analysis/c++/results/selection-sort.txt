@@ -1,0 +1,16 @@
+Algorithm 2; Vector 1; Sorted 10%; Size 100000; Elapsed time 7.365451 secs
+Algorithm 2; Vector 2; Sorted 10%; Size 100000; Elapsed time 7.374642 secs
+Algorithm 2; Vector 3; Sorted 10%; Size 100000; Elapsed time 7.351406 secs
+Algorithm 2; Vector 4; Sorted 10%; Size 100000; Elapsed time 7.402063 secs
+Algorithm 2; Vector 5; Sorted 10%; Size 100000; Elapsed time 7.341985 secs
+Average time: 7.367109 secs
+
+Algorithm 2; Vector 1; Sorted 10%; Size 500000; Elapsed time 182.805158 secs
+Algorithm 2; Vector 2; Sorted 10%; Size 500000; Elapsed time 184.445634 secs
+Algorithm 2; Vector 3; Sorted 10%; Size 500000; Elapsed time 182.850618 secs
+Algorithm 2; Vector 4; Sorted 10%; Size 500000; Elapsed time 183.449604 secs
+Algorithm 2; Vector 5; Sorted 10%; Size 500000; Elapsed time 184.360575 secs
+Average time: 183.582318 secs
+
+Algorithm 2; Vector 1; Sorted 10%; Size 1000000; Elapsed time 740.026843 secs
+Algorithm 2; Vector 2; Sorted 10%; Size 1000000; Elapsed time 760.875785 secs

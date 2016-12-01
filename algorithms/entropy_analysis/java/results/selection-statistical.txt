@@ -1,0 +1,13 @@
+Algorithm 2; Vector 1; Sorted 10%; Size 100000; Elapsed time 7677 ms
+Average time: 1535 ms
+
+
+-----------------------------------------
+Algorithm 2; Vector 1; Sorted 50%; Size 100000; Elapsed time 7645 ms
+Average time: 1529 ms
+
+
+-----------------------------------------
+Algorithm 2; Vector 1; Sorted 90%; Size 100000; Elapsed time 4204 ms
+Average time: 840 ms
+

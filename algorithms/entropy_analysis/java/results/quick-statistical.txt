@@ -1,0 +1,69 @@
+Algorithm 4; Vector 1; Sorted 10%; Size 100000; Elapsed time 22 ms
+Algorithm 4; Vector 2; Sorted 10%; Size 100000; Elapsed time 8 ms
+Algorithm 4; Vector 3; Sorted 10%; Size 100000; Elapsed time 9 ms
+Algorithm 4; Vector 4; Sorted 10%; Size 100000; Elapsed time 10 ms
+Algorithm 4; Vector 5; Sorted 10%; Size 100000; Elapsed time 9 ms
+Average time: 11 ms
+
+Algorithm 4; Vector 1; Sorted 10%; Size 500000; Elapsed time 68 ms
+Algorithm 4; Vector 2; Sorted 10%; Size 500000; Elapsed time 47 ms
+Algorithm 4; Vector 3; Sorted 10%; Size 500000; Elapsed time 48 ms
+Algorithm 4; Vector 4; Sorted 10%; Size 500000; Elapsed time 80 ms
+Algorithm 4; Vector 5; Sorted 10%; Size 500000; Elapsed time 50 ms
+Average time: 58 ms
+
+Algorithm 4; Vector 1; Sorted 10%; Size 1000000; Elapsed time 97 ms
+Algorithm 4; Vector 2; Sorted 10%; Size 1000000; Elapsed time 101 ms
+Algorithm 4; Vector 3; Sorted 10%; Size 1000000; Elapsed time 99 ms
+Algorithm 4; Vector 4; Sorted 10%; Size 1000000; Elapsed time 123 ms
+Algorithm 4; Vector 5; Sorted 10%; Size 1000000; Elapsed time 147 ms
+Average time: 113 ms
+
+
+-----------------------------------------
+Algorithm 4; Vector 1; Sorted 50%; Size 100000; Elapsed time 9 ms
+Algorithm 4; Vector 2; Sorted 50%; Size 100000; Elapsed time 7 ms
+Algorithm 4; Vector 3; Sorted 50%; Size 100000; Elapsed time 10 ms
+Algorithm 4; Vector 4; Sorted 50%; Size 100000; Elapsed time 9 ms
+Algorithm 4; Vector 5; Sorted 50%; Size 100000; Elapsed time 7 ms
+Average time: 8 ms
+
+Algorithm 4; Vector 1; Sorted 50%; Size 500000; Elapsed time 45 ms
+Algorithm 4; Vector 2; Sort0,ed 50%; Size 500000; Elapsed time 43 ms
+Algorithm 4; Vector 3; Sorted 50%; Size 500000; Elapsed time 63 ms
+Algorithm 4; Vector 4; Sorted 50%; Size 500000; Elapsed time 65 ms
+Algorithm 4; Vector 5; Sorted 50%; Size 500000; Elapsed time 73 ms
+Average time: 57 ms
+
+Algorithm 4; Vector 1; Sorted 50%; Size 1000000; Elapsed time 90 ms
+Algorithm 4; Vector 2; Sorted 50%; Size 1000000; Elapsed time 103 ms
+Algorithm 4; Vector 3; Sorted 50%; Size 1000000; Elapsed time 124 ms
+Algorithm 4; Vector 4; Sorted 50%; Size 1000000; Elapsed time 103 ms
+Algorithm 4; Vector 5; Sorted 50%; Size 1000000; Elapsed time 116 ms
+Average time: 107 ms
+
+
+-----------------------------------------
+Algorithm 4; Vector 1; Sorted 90%; Size 100000; Elapsed time 12 ms
+Algorithm 4; Vector 2; Sorted 90%; Size 100000; Elapsed time 11 ms
+Algorithm 4; Vector 3; Sorted 90%; Size 100000; Elapsed time 9 ms
+Algorithm 4; Vector 4; Sorted 90%; Size 100000; Elapsed time 13 ms
+Algorithm 4; Vector 5; Sorted 90%; Size 100000; Elapsed time 15 ms
+Average time: 12 ms
+
+Algorithm 4; Vector 1; Sorted 90%; Size 500000; Elapsed time 75 ms
+Algorithm 4; Vector 2; Sorted 90%; Size 500000; Elapsed time 50 ms
+Algorithm 4; Vector 3; Sorted 90%; Size 500000; Elapsed time 53 ms
+Algorithm 4; Vector 4; Sorted 90%; Size 500000; Elapsed time 58 ms
+Algorithm 4; Vector 5; Sorted 90%; Size 500000; Elapsed time 76 ms
+Average time: 62 ms
+
+Algorithm 4; Vector 1; Sorted 90%; Size 1000000; Elapsed time 167 ms
+Algorithm 4; Vector 2; Sorted 90%; Size 1000000; Elapsed time 114 ms
+Algorithm 4; Vector 3; Sorted 90%; Size 1000000; Elapsed time 109 ms
+Algorithm 4; Vector 4; Sorted 90%; Size 1000000; Elapsed time 109 ms
+Algorithm 4; Vector 5; Sorted 90%; Size 1000000; Elapsed time 103 ms
+Average time: 120 ms
+
+
+-----------------------------------------

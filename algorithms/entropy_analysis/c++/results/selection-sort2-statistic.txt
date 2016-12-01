@@ -1,0 +1,37 @@
+Algorithm 2; Vector 1; Sorted 10%; Size 100000; Elapsed time 7.381773 secs
+Algorithm 2; Vector 2; Sorted 10%; Size 100000; Elapsed time 7.372722 secs
+Algorithm 2; Vector 3; Sorted 10%; Size 100000; Elapsed time 7.358736 secs
+Algorithm 2; Vector 4; Sorted 10%; Size 100000; Elapsed time 7.396978 secs
+Algorithm 2; Vector 5; Sorted 10%; Size 100000; Elapsed time 7.341091 secs
+Average time: 7.370260 secs
+
+Algorithm 2; Vector 1; Sorted 10%; Size 500000; Elapsed time 185.496651 secs
+Algorithm 2; Vector 2; Sorted 10%; Size 500000; Elapsed time 191.385721 secs
+Algorithm 2; Vector 3; Sorted 10%; Size 500000; Elapsed time 195.135832 secs
+Algorithm 2; Vector 4; Sorted 10%; Size 500000; Elapsed time 192.738278 secs
+Algorithm 2; Vector 5; Sorted 10%; Size 500000; Elapsed time 189.330906 secs
+Average time: 190.817478 secs
+
+-----------------------------------------
+Algorithm 2; Vector 1; Sorted 50%; Size 100000; Elapsed time 7.364151 secs
+Algorithm 2; Vector 2; Sorted 50%; Size 100000; Elapsed time 7.887305 secs
+Algorithm 2; Vector 3; Sorted 50%; Size 100000; Elapsed time 7.855034 secs
+Algorithm 2; Vector 4; Sorted 50%; Size 100000; Elapsed time 7.922339 secs
+Algorithm 2; Vector 5; Sorted 50%; Size 100000; Elapsed time 7.901132 secs
+Average time: 7.785992 secs
+
+Algorithm 2; Vector 1; Sorted 50%; Size 500000; Elapsed time 187.535235 secs
+Algorithm 2; Vector 2; Sorted 50%; Size 500000; Elapsed time 187.111469 secs
+Algorithm 2; Vector 3; Sorted 50%; Size 500000; Elapsed time 187.646630 secs
+Algorithm 2; Vector 4; Sorted 50%; Size 500000; Elapsed time 183.428233 secs
+Algorithm 2; Vector 5; Sorted 50%; Size 500000; Elapsed time 183.627158 secs
+Average time: 185.869745 secs
+
+-----------------------------------------
+Algorithm 2; Vector 1; Sorted 90%; Size 100000; Elapsed time 7.308976 secs
+Algorithm 2; Vector 2; Sorted 90%; Size 100000; Elapsed time 7.364767 secs
+Algorithm 2; Vector 3; Sorted 90%; Size 100000; Elapsed time 7.424978 secs
+Algorithm 2; Vector 4; Sorted 90%; Size 100000; Elapsed time 7.632040 secs
+Algorithm 2; Vector 5; Sorted 90%; Size 100000; Elapsed time 7.525883 secs
+Average time: 7.451329 secs
+
