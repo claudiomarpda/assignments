@@ -1,5 +1,7 @@
-"main.cpp" calls assembly functions from "asm.asm" file
+main.cpp calls assembly functions from asm.asm file
 in order to do some bitwise operations.
+
+![alt tag](https://github.com/claudiomarpda/assignments/blob/master/architecture/c_assembly/output.jpg)
 
 --------------------------------------------
 Sistema Operacional: Ubuntu 14.04 LTS
