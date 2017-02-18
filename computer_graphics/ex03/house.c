@@ -7,7 +7,6 @@
 */
 
 #include <GL/glut.h>	
-#include <math.h>
 
 void init(){
     glClearColor(0,0,0,0);

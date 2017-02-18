@@ -1,6 +1,5 @@
 /**
-	@author: Claudiomar Araújo
-	02/xx/2017
+	fev 2017
 
 	Basic of computer graphics.
 
@@ -78,30 +77,14 @@ void display(){
             sleep(1.0f);
 
         }
-        /*r = (float) rand() / RAND_MAX;
-        g = (float) rand() / RAND_MAX;
-        b = (float) rand() / RAND_MAX;
-
-        glColor3f(r, g, b); // random color
-        glBegin(GL_QUADS);
-
-        	glVertex2f(-1.0f, 1.0f); // top left 
-        	glVertex2f(1.0f, 1.0f); // top right
-
-        	glVertex2f(1.0f, 0.9f); // bottom right
-        	glVertex2f(-1.0f, 0.9f); // bottom left
-        glEnd();
-
-        glFlush();*/
     }
 
 }
 
 int main(int argc, char **argv){ 	
     glutInit(&argc, argv);
-    glutCreateWindow("opengl");
-    //glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
     glutInitWindowSize(320, 320);
+    glutCreateWindow("opengl");
     glutInitWindowPosition(150, 50);
     glutDisplayFunc(display);
 

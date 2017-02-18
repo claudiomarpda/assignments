@@ -1,10 +1,9 @@
 /**
-	@author: Claudiomar Araújo
-	02/xx/2017
+	fev 2017
 
 	Basic of computer graphics.
 
-	gcc -o run main.c -lglut -lGLU -lGL
+	gcc -o run randomfull.c -lglut -lGLU -lGL
 */
 
 #include <GL/glut.h>	
@@ -32,14 +31,12 @@ void display(){
 
         sleep(1);
     }
-
 }
 
 int main(int argc, char **argv){ 	
     glutInit(&argc, argv);
+    glutInitWindowSize(1920, 1080);
     glutCreateWindow("opengl");
-    //glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
-    glutInitWindowSize(320, 320);
     glutInitWindowPosition(150, 50);
     glutDisplayFunc(display);
 

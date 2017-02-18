@@ -1,10 +1,9 @@
 /**
-	@author: Claudiomar Araújo
-	02/xx/2017
+	fev 2017
 
 	Basic of computer graphics.
 
-	gcc -o run main.c -lglut -lGLU -lGL
+	gcc -o run random_square.c -lglut -lGLU -lGL
 */
 
 #include <GL/glut.h>	
@@ -22,6 +21,9 @@ void display(){
     glClear(GL_COLOR_BUFFER_BIT);
 
     float r, g, b;
+    int white_counter = 0;
+    int black_counter = 0;
+    int strong_counter = 0;
 
     while(1){
         float x1 = -1;
@@ -42,7 +44,37 @@ void display(){
             g = (float) rand() / RAND_MAX;
             b = (float) rand() / RAND_MAX;
 
+            if(strong_counter++ % 2 == 0){
+                if(r > g) {
+                    g = 0;
+                }
+                else {
+                    r = 0;
+                }
+                if(g > b) {
+                    b = 0;
+                }
+                else {
+                    g = 0;
+                }
+                if(b > r){
+                    r = 0;
+                }
+            }
+
+            // forces only strong colors
+
+            if(black_counter++ % 5 == 0) {
+                r = g = b = 0;
+            }
+            if(white_counter++ % 20 == 0) {
+                r = g = b = 1;
+            }
+        
+            // change color
             glColor3f(r, g, b); // random color
+            
+            // draw quads
             glBegin(GL_QUADS);
                 glVertex2f(x1, y1); // top left 
                 glVertex2f(x2, y2); // top right
@@ -52,8 +84,8 @@ void display(){
             glEnd();
 
             glFlush();
-
-
+        
+            // new dimensions for quads
             x1 += 0.25;
             x2 -= 0.25;
             x3 -= 0.25;
@@ -64,7 +96,7 @@ void display(){
             y3 += 0.25;
             y4 += 0.25;
 
-            sleep(1.0);
+            sleep(1);
 
         }
     }
@@ -73,9 +105,8 @@ void display(){
 
 int main(int argc, char **argv){ 	
     glutInit(&argc, argv);
+    glutInitWindowSize(1920, 1080);
     glutCreateWindow("opengl");
-    //glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
-    glutInitWindowSize(320, 320);
     glutInitWindowPosition(150, 50);
     glutDisplayFunc(display);
 
