@@ -7,4 +7,4 @@ main.o: main.c
 	$(CC) -c main.c
 
 clean:
-	rm *.o run cpy_cube.x3d
+	rm *.o run

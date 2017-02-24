@@ -44,6 +44,7 @@ void display(){
             g = (float) rand() / RAND_MAX;
             b = (float) rand() / RAND_MAX;
 
+            // forces only strong colors
             if(strong_counter++ % 2 == 0){
                 if(r > g) {
                     g = 0;
@@ -62,7 +63,6 @@ void display(){
                 }
             }
 
-            // forces only strong colors
 
             if(black_counter++ % 5 == 0) {
                 r = g = b = 0;

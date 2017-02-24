@@ -24,10 +24,8 @@ int main(int argc, char* argv[]) {
 
 			printf("Exercise 01\n");
 			printf("Enter hour: ");
-			//cin >> hour;
 			scanf("%d", &hour);
 			printf("Enter minute: ");
-			//cin >> minute;
 			scanf("%d", &minute);
 
 			ex01(hour, minute);
