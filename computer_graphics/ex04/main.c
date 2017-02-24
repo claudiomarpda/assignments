@@ -34,8 +34,6 @@ typedef struct PointList {
 
 const char *COORDINATE_PATTERN = "coordIndex=\"";
 const char *POINT_PATTERN = "point=\"";
-const int CUBE_FACES = 6;
-const int CUBE_POINTS = 8;
 
 // function prototypes
 int readFile (const char* fileName);
