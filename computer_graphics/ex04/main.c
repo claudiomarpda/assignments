@@ -1,5 +1,5 @@
 /**
-	A 3d cube was exported from blender with triangle vertices.
+	A 3d cube with triangle vertices was exported from blender.
 	This program reads this file, look for cube data and store then in list structures.
 	The data are face and point coordinates.
 	The data can be found after a pattern as described in the constant variables below.
@@ -101,18 +101,18 @@ int readFile (const char* fileName) {
 		if(!coordinateWasFound){
 			coordinateWasFound = readFace(inFile, buffer);
 		}
-
 		// look for point pattern only after finding face data, and then the values
-		if(coordinateWasFound){
+		else {
 			if(readPoint(inFile, buffer)){
-				return 1; // data should be sucessfully saved
+				fclose (inFile);
+				return 1; // all data should be sucessfully saved.
 			}
 		}
 	}
 	while (!feof (inFile));
 	fclose (inFile);
 
-	return 0; // data was not saved
+	return 0; // data were not saved
 }
 
 /*
@@ -141,6 +141,7 @@ void insertFace(FaceList *list, const int coordinate[]) {
 void printFaceList() {
 	
 	if(faceList == NULL){
+		puts("List is null. There is nothing to show");
 		return;
 	}	
 
@@ -178,6 +179,7 @@ void insertPoint(PointList *list, const float x, const float y, const float z) {
 void printPointList() {
 
 	if(pointList == NULL){
+		puts("List is null. There is nothing to show");
 		return;
 	}
 
@@ -191,18 +193,18 @@ void printPointList() {
 
 /**
 	Reads Face data according to the file pattern.
-	@return 1 if the pattern was found and data was saved.
+	@return 1 if the pattern was found and data were saved.
 	@return 0 otherwise
 */
 int readFace(FILE *inFile, const char* buffer){
 	char *pFirstOcurrence = strstr(buffer, COORDINATE_PATTERN);
-	if(pFirstOcurrence != NULL){
+	if(pFirstOcurrence != NULL){ // Pattern was found
 
 		/* 
-		 after finding the pattern, the result string should be something like
+		 After finding the pattern, the result string should be something like
 		 coordIndex="1
-		 now is necessary to get this number that is sticked to the string, which is a face coordinate value
-		 to do that, the string is splitted in tokens
+		 Now is necessary to get this number that is sticked to the string, which is a face coordinate value.
+		 To do that, the string is splitted in tokens.
 		*/
 		char *token = strtok(pFirstOcurrence, "\""); // split in quotation: "
 		token = strtok(NULL, "\""); // gets the right side of the string, which is the number
@@ -224,19 +226,19 @@ int readFace(FILE *inFile, const char* buffer){
 
 /**
 	Reads Point data according to the file pattern.
-	@return 1 if the pattern was found and data was saved.
+	@return 1 if the pattern was found and data were saved.
 	@return 0 otherwise
 */
 int readPoint(FILE *inFile, const char *buffer){
 	char *pFirstOcurrence = strstr(buffer, POINT_PATTERN);
 
-	if(pFirstOcurrence != NULL){
+	if(pFirstOcurrence != NULL){ // Pattern was found
 
 		/* 
-		 after finding the pattern, the result string should be something like
+		 After finding the pattern, the result string should be something like
 		 point="1.000000
-		 now is necessary to get this number that is sticked to the string, which is a coordinate value
-		 to do that, the string is splitted in tokens
+		 Now is necessary to get this number that is sticked to the string, which is a coordinate value.
+		 To do that, the string is splitted in tokens.
 		*/
 		char *token = strtok(pFirstOcurrence, "\""); // split in quotation: "
 		token = strtok(NULL, "\""); // gets the right side of the string, which is the number
@@ -254,7 +256,7 @@ int readPoint(FILE *inFile, const char *buffer){
 		return 1; // point data should be sucessfully saved
 	}	
 
-	return 0; // point data was not saved
+	return 0; // point data were not saved
 }
 
 /**
