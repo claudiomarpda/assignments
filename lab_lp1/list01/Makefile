@@ -1,5 +1,3 @@
-#12/08/2016
-
 CC = g++ -std=c++11
 
 output: main.o list01.o

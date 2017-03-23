@@ -1,15 +1,9 @@
-#include "list01.hpp"
+#include "list04.hpp"
+#include "ex04.hpp"
 #include <stdlib.h>
 #include <iostream>
 
 using namespace std;
-
-/**
-	Choose an exercise between 1 and 4
-	./run 1 1
-	./run 1 2
-	./run 1 ...
-*/
 
 int main(int argc, char* argv[]) {
 
@@ -35,7 +29,16 @@ int main(int argc, char* argv[]) {
 			break;
 		case 4:
 			cout << "Exercise 04" << endl;
-			ex04();
+			int vote;
+			puts("Survey: Who was the best player?");
+			do {
+				printf("Player number (0 = end):");
+				cin >> vote;
+				addVote(vote);
+			} while(vote != 0);	
+
+			showResults();
+			break;;
 	}
 
     return 0;

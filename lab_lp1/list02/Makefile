@@ -1,4 +1,3 @@
-#CC = g++ -std=c++11
 CC = gcc -std=c99
 
 run: main.o list02.o

@@ -28,15 +28,24 @@ void display(){
     glClear(GL_COLOR_BUFFER_BIT);
 
     // background
-    // 
+    
     glBegin(GL_QUADS); // needs 4 vertices for a quad
-    	glColor3f(0.529f, 0.808f, 0.980f); // blue sky
-    	glVertex2f(-1.0f, 1.0f); 
-    	glVertex2f(1.0f, 1.0f);
+        glColor3f(0.529f, 0.808f, 0.980f); // blue sky
+        glVertex2f(-1.0f, 1.0f); 
+        glVertex2f(1.0f, 1.0f);
 
-		glColor3f(1.0f, 1.0f, 1.0f); // white
-    	glVertex2f(1.0f, -1.0f);
-    	glVertex2f(-1.0f, -1.0f);
+        glColor3f(1.0f, 1.0f, 1.0f); // white
+        glVertex2f(1.0f, -0.0f);
+        glVertex2f(-1.0f, -0.0f);
+    glEnd();
+
+    glColor3f(1.0f, 1.0f, 1.0f); // white
+    glBegin(GL_QUADS); // needs 4 vertices for a quad
+        glVertex2f(1.0f, 0.0f); 
+        glVertex2f(-1.0f, 0.0f);
+
+        glVertex2f(-1.0f, -1.0f);
+        glVertex2f(1.0f, -1.0f);
     glEnd();
 
     // house walls

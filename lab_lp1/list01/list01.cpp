@@ -1,7 +1,3 @@
-//
-// Created by mz on 26/01/17.
-//
-
 #include <iostream>
 #include <limits>
 

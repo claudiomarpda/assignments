@@ -1,7 +1,3 @@
-//
-// Created by mz on 26/01/17.
-//
-
 #ifndef LIST01_HPP
 #define LIST01_HPP
 
