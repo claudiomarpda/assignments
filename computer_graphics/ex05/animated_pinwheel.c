@@ -31,13 +31,11 @@ void drawLeaves() {
     glColor3f(1, 0.5, 0); // orange leaves
 
     for(int i = 0, angle = 5; i < leaves; i++, angle += interval) {
-        
-
         glRotatef(angle, 0.0f, 0.0f, 1.0f);
         glBegin(GL_TRIANGLES);
             glVertex2f(0.3f, 0.3f); // bottom left
             glVertex2f(0.3f, 0.0f); // bottom right
-            glVertex2f(0.0f, 0.0f); // bottom top
+            glVertex2f(0.0f, 0.0f); // top
         glEnd();
     }
 }
@@ -45,11 +43,10 @@ void drawLeaves() {
 void drawLeavesCenter() {
     glColor3f(0.0f, 0.5f, 1.0f); // light blue
     glBegin(GL_QUADS); // needs 4 vertices for a quad
-    glVertex2f(-0.1f, 0.1f); // top left
-    glVertex2f(0.1f, 0.1f); // top right
-
-    glVertex2f(0.1f, -0.1f); // bottom right
-    glVertex2f(-0.1f, -0.1f); // bottom left
+        glVertex2f(-0.1f, 0.1f); // top left
+        glVertex2f(0.1f, 0.1f); // top right
+        glVertex2f(0.1f, -0.1f); // bottom right
+        glVertex2f(-0.1f, -0.1f); // bottom left
     glEnd();
 }
 
