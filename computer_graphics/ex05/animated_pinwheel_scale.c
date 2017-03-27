@@ -1,8 +1,10 @@
 /**
-    Planar Geometric Transformations.
-    glLoadIdentity()
-    glRotatef()
-
+    Draws a pinwheel with the following concepts:
+    -   Planar Geometric Transformations.
+    -   glLoadIdentity()
+    -   glRotatef()
+    -   glScalef()
+    
     gcc animated_pinwheel.c -o animated_pinwheel -lglut -lGLU -lGL
 */
 
