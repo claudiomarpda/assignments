@@ -5,7 +5,7 @@
     -   glRotatef()
     -   glScalef()
     
-    gcc animated_pinwheel.c -o animated_pinwheel -lglut -lGLU -lGL
+    gcc animated_pinwheel_scale.c -o animated_pinwheel_scale -lglut -lGLU -lGL
 */
 
 #include <GL/glut.h>    
