@@ -62,14 +62,6 @@ int main(){
 		puts("Something is wrong. Data were not saved in list");
 	}
 
-	 // simple cube
-	/*if(readFile("cube.x3d")) {
-		puts("Face and Point data were sucessfully saved.");
-	}
-	else {
-		puts("Something is wrong. Data were not saved");
-	}
-*/	
 	printFaceList();
 	printPointList();
 	freeFaces();
