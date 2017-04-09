@@ -49,9 +49,9 @@ int readFile (const char* fileName) {
 */
 void insertFace(FaceList *list, const int coordinate[]) {
 	Face *newFace = (Face*) malloc(sizeof(Face));
-	newFace->point[0] = coordinate[0];
-	newFace->point[1] = coordinate[1];
-	newFace->point[2] = coordinate[2];
+	newFace->pointIndex[0] = coordinate[0];
+	newFace->pointIndex[1] = coordinate[1];
+	newFace->pointIndex[2] = coordinate[2];
 
 	if(list->first == NULL) {
 		list->first = newFace;
@@ -76,7 +76,7 @@ void printFaceList() {
 	puts("Points data:");
 	Face *face = faceList->first;
 	while(face != NULL){
-		printf("%d %2d %2d\n", face->point[0], face->point[1], face->point[2]);
+		printf("%d %2d %2d\n", face->pointIndex[0], face->pointIndex[1], face->pointIndex[2]);
 		face = face->next;
 	}
 }
@@ -201,7 +201,7 @@ void freeFaces() {
 	}
 	free(faceList);
 	faceList = NULL;
-	puts("Face data deleted.");
+	puts("Face data released.");
 }
 
 /**
@@ -218,7 +218,7 @@ void freePoints() {
 	}
 	free(pointList);
 	pointList = NULL;
-	puts("Point data deleted.");
+	puts("Point data released.");
 }
 
 /**
@@ -227,7 +227,7 @@ void freePoints() {
 	@param index is the location.
 	@return the point or NULL, if not found.
 */
-Point* getPointAt(unsigned int index) {
+Point* getPointAt(const unsigned int index) {
 	Point* point = pointList->first;
 	int counter = 0;
 

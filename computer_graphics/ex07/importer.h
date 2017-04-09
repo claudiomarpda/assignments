@@ -10,7 +10,7 @@ const char *POINT_PATTERN = "point=\"";
 #define POINTS_PER_FACE 3
 
 typedef struct Face { // model face of a cube with triangle vertices
-	int point[POINTS_PER_FACE];
+	int pointIndex[POINTS_PER_FACE];
 	struct Face *next;
 } Face;
 

@@ -4,7 +4,7 @@
 	The file format is .x3d.
 	
 	@see importer.h
-		 importer.c
+		importer.c
 		 
 	Compile with:
 		gcc main.c -o main -lGL -lGLU -lglut
@@ -132,6 +132,21 @@ void rotateDown() {
 	glPushMatrix();
 }
 
+void clearAllVariables() {
+	xCoord = 0.0f;
+	yCoord = 0.0f;
+	zCoord = 0.0f;
+
+	xAngle = 0.0f;
+	yAngle = 0.0f;
+	zAngle = 0.0f;
+
+	zoom = 1.0f;
+
+	zRotationAngle = 0.0f;
+	xRotationAngle = 0.0f;
+}
+
 void keyboardInput(unsigned char key, int x, int y) {
 	int defaultCase = 0;
 	switch(key) {
@@ -141,6 +156,7 @@ void keyboardInput(unsigned char key, int x, int y) {
 			exit(0);
 			break;
 		case 033: // esc key
+		    clearAllVariables();
 			glClear(GL_COLOR_BUFFER_BIT);
 			break;
 		case 'w':
@@ -220,11 +236,8 @@ void drawLoadedModel() {
 
 			// searches for points according to face indexes
 			for(int i = 0; i < POINTS_PER_FACE; i++) {
-				point = getPointAt(face->point[i]);
-				glVertex3f(
-					point->x,
-					point->y,
-					point->z);
+				point = getPointAt(face->pointIndex[i]);
+				glVertex3f(point->x, point->y, point->z);
 			}
 			face = face->next;
 			iFace++;
@@ -264,7 +277,7 @@ void display() {
 void initGlut(int argc, char** argv) {
 	glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB); // the operation mode
-    glutInitWindowSize(1000, 1000); // size in pixels
+    glutInitWindowSize(500, 500); // size in pixels
     glutCreateWindow(argv[0]); // creates the window with its title
 	glutKeyboardFunc(keyboardInput);
 	initView();
@@ -283,6 +296,7 @@ int main(int argc, char **argv){
 	}
 	else {
 		puts("Something is wrong. Data were not saved in list");
+		exit(1);
 	}
 	
 	printFaceList();
