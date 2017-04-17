@@ -276,13 +276,13 @@ void display() {
 
 void initGlut(int argc, char** argv) {
 	glutInit(&argc, argv);
-    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB); // the operation mode
-    glutInitWindowSize(500, 500); // size in pixels
-    glutCreateWindow(argv[0]); // creates the window with its title
+	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB); // the operation mode
+	glutInitWindowSize(500, 500); // size in pixels
+	glutCreateWindow(argv[0]); // creates the window with its title
 	glutKeyboardFunc(keyboardInput);
 	initView();
-    glutDisplayFunc(display); // draw my art :)
-    glutMainLoop(); // endless loop
+	glutDisplayFunc(display); // draw my art :)
+	glutMainLoop(); // endless loop
 }
 
 int main(int argc, char **argv){
