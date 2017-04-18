@@ -48,7 +48,7 @@ void loadModel() {
     Face* face = faceList->first;
     Point* point;
 
-    glGenLists(++listIndex); // create one display list for four models
+    glGenLists(++listIndex); // create one display list
     glNewList(listIndex, GL_COMPILE);       
         glBegin(GL_LINE_LOOP); // wire frame
         // glBegin(GL_TRIANGLE); // solid
@@ -67,6 +67,7 @@ void loadModel() {
         glEnd();
     glEndList();
 }
+
 void init() {
     // glClearColor(0.0, 0.0, 0.0, 0.0);
     glClearColor(1.0, 1.0, 1.0, 1.0);
