@@ -81,8 +81,9 @@ void keyboardInput(unsigned char key, int x, int y) {
 	Rotates the view to make it easy to see the axes in 3D.
 */
 void rotateView() {
- 	glRotated(90, 90, 0, 0);
-	// glRotated(0, 0, 1, 0);
+ 	glRotated(90, 1, 0, 0);
+	glRotated(30, 0, 0, 1);
+	glRotated(30, 0, 1, 0);
 }
 
 void drawEarthAndSun() {
